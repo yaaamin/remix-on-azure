@@ -1,25 +1,20 @@
 import {
   Link,
-  LinksFunction,
-  LoaderFunction,
-  MetaFunction,
   useLoaderData,
 } from "remix";
 
-import stylesUrl from "../styles/index.css";
-
-export let meta: MetaFunction = () => {
+export let meta = () => {
   return {
     title: "Remix Starter",
     description: "Welcome to remix!",
   };
 };
 
-export let links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesUrl }];
+export let links = () => {
+  return [];
 };
 
-export let loader: LoaderFunction = async () => {
+export let loader = async () => {
   return { message: "this is awesome 😎" };
 };
 
