@@ -4,8 +4,10 @@
   "description": "",
   "license": "",
   "scripts": {
-    "build": "remix build",
-    "dev": "cross-env NODE_ENV=development swa start ./public --run \"remix dev\" --api-location .",
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -o ./app/styles/app.css",
+    "dev": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=development swa start ./public --run \"remix dev\" --api-location .\"",
+    "dev:css": "tailwindcss -o ./app/styles/app.css --watch",
     "start": "remix-serve build",
     "prepare": "remix setup node"
   },
@@ -23,7 +25,11 @@
     "@azure/static-web-apps-cli": "0.8.2",
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
     "cross-env": "7.0.3",
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23",
     "typescript": "4.5.4"
   },
   "engines": {

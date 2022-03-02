@@ -10,7 +10,7 @@ import {
   useLoaderData,
 } from "remix";
 
-import stylesUrl from "./styles/global.css";
+import stylesUrl from "./styles/app.css";
 
 export let links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
