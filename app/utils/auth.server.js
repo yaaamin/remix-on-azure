@@ -11,6 +11,7 @@ authenticator.use(
     {
       clientID: 'd187623e40f396c85abc',
       clientSecret: 'ca109a7f72ac5240a9335fb90adf315186bb9707',
+      // callbackURL: 'http://localhost:3000/auth/github/callback',
       callbackURL: 'https://polite-field-043a3c810.1.azurestaticapps.net/auth/github/callback',
     },
     //check wheter the user is in the database

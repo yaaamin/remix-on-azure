@@ -20,7 +20,7 @@ function secret() {
       <div className="flex h-full flex-col content-center justify-center text-center">
         <h1 className="text-7xl">🤫</h1>
         <h1 className="text-6xl font-semibold ">Shhhhh. This is a protected route.</h1>
-        <p className="text-gray-500">Dont tell anmybody about this! </p>
+        <p className="text-gray-500">Dont tell anybody about this! </p>
       </div>
     </div>
   )
