@@ -510,10 +510,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 75vh;
 }
 
-.h-\[84vh\] {
-  height: 84vh;
-}
-
 .h-full {
   height: 100%;
 }
@@ -598,10 +594,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-t {
